@@ -54,8 +54,7 @@ final class NotePersistent {
             let notes =  Note(title: $0.title ?? "",
                               description: $0.descriptionText,
                               date: $0.date ?? Date(),
-                              imageURL: $0.imageUrl,
-                              category: .personal)
+                              imageURL: $0.imageUrl)
             return notes
         }
     }

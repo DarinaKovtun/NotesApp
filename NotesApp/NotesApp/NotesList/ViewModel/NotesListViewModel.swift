@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import UIKit
 
 protocol NotesListViewModelProtocol {
     var section: [TableViewSection] { get }
     var reloadTable: (() -> Void)? { get set }
     
     func getNotes()
+    func getImage(for url: URL) -> UIImage?
 }
 
 final class NotesListViewModel: NotesListViewModelProtocol {
@@ -26,7 +28,7 @@ final class NotesListViewModel: NotesListViewModelProtocol {
     init() {
         getNotes()
     }
-    
+ 
     func getNotes() {
         let notes = NotePersistent.fetchAll()
         section = []
@@ -48,20 +50,7 @@ final class NotesListViewModel: NotesListViewModelProtocol {
         }
     }
     
-    private func setMocks() {
-        let section = TableViewSection(title: "23 Apr 2023",
-                                       items: [
-                                        Note(title: "first note",
-                                             description: "First note descroption",
-                                             date: Date(),
-                                             imageURL: nil,
-                                             category: .work),
-                                        Note(title: "second note",
-                                             description: "Second note descroption",
-                                             date: Date(),
-                                             imageURL: nil,
-                                             category: .other)
-                                       ])
-        self.section = [section]
+    func getImage(for url: URL) -> UIImage? {
+        FileManagerPersistent.read(from: url)
     }
 }

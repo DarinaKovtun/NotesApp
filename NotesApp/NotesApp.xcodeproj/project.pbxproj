@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02877A12BF2AFD900A44FCB /* FileManagerPersistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02877A02BF2AFD900A44FCB /* FileManagerPersistent.swift */; };
+		C02877A42BF2BBEA00A44FCB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C02877A32BF2BBEA00A44FCB /* SnapKit */; };
+		C02877A62BF2BBEA00A44FCB /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C02877A52BF2BBEA00A44FCB /* SnapKit-Dynamic */; };
 		C08395152BF13F7400B75B5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08395142BF13F7400B75B5B /* AppDelegate.swift */; };
 		C08395192BF13F7400B75B5B /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08395182BF13F7400B75B5B /* NotesListViewController.swift */; };
 		C083951E2BF13F7500B75B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C083951D2BF13F7500B75B5B /* Assets.xcassets */; };
 		C08395212BF13F7500B75B5B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C08395202BF13F7500B75B5B /* Base */; };
 		C08395292BF140B700B75B5B /* SimpleNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08395282BF140B700B75B5B /* SimpleNoteTableViewCell.swift */; };
 		C083952B2BF140C300B75B5B /* ImageNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C083952A2BF140C200B75B5B /* ImageNoteTableViewCell.swift */; };
-		C083952E2BF142A900B75B5B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C083952D2BF142A900B75B5B /* SnapKit */; };
-		C08395302BF142A900B75B5B /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C083952F2BF142A900B75B5B /* SnapKit-Dynamic */; };
 		C08395342BF1473500B75B5B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08395332BF1473500B75B5B /* Note.swift */; };
 		C08395382BF147C700B75B5B /* NotesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08395372BF147C700B75B5B /* NotesListViewModel.swift */; };
 		C083953A2BF1489F00B75B5B /* TableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08395392BF1489F00B75B5B /* TableViewSection.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C02877A02BF2AFD900A44FCB /* FileManagerPersistent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerPersistent.swift; sourceTree = "<group>"; };
 		C08395112BF13F7400B75B5B /* NotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08395142BF13F7400B75B5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C08395182BF13F7400B75B5B /* NotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
@@ -53,8 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C083952E2BF142A900B75B5B /* SnapKit in Frameworks */,
-				C08395302BF142A900B75B5B /* SnapKit-Dynamic in Frameworks */,
+				C02877A42BF2BBEA00A44FCB /* SnapKit in Frameworks */,
+				C02877A62BF2BBEA00A44FCB /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,7 @@
 				C08395142BF13F7400B75B5B /* AppDelegate.swift */,
 				C08395392BF1489F00B75B5B /* TableViewSection.swift */,
 				C083954A2BF22BF700B75B5B /* NotePersistent.swift */,
+				C02877A02BF2AFD900A44FCB /* FileManagerPersistent.swift */,
 				C08395402BF150F000B75B5B /* Note */,
 				C08395362BF1478400B75B5B /* NotesList */,
 				C083953D2BF14DBB00B75B5B /* Extensions */,
@@ -190,8 +193,8 @@
 			);
 			name = NotesApp;
 			packageProductDependencies = (
-				C083952D2BF142A900B75B5B /* SnapKit */,
-				C083952F2BF142A900B75B5B /* SnapKit-Dynamic */,
+				C02877A32BF2BBEA00A44FCB /* SnapKit */,
+				C02877A52BF2BBEA00A44FCB /* SnapKit-Dynamic */,
 			);
 			productName = NotesApp;
 			productReference = C08395112BF13F7400B75B5B /* NotesApp.app */;
@@ -222,7 +225,7 @@
 			);
 			mainGroup = C08395082BF13F7400B75B5B;
 			packageReferences = (
-				C083952C2BF142A900B75B5B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C02877A22BF2BBEA00A44FCB /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = C08395122BF13F7400B75B5B /* Products */;
 			projectDirPath = "";
@@ -256,6 +259,7 @@
 				C083954B2BF22BF700B75B5B /* NotePersistent.swift in Sources */,
 				C08395492BF22A2900B75B5B /* NoteEntity+CoreDataProperties.swift in Sources */,
 				C08395342BF1473500B75B5B /* Note.swift in Sources */,
+				C02877A12BF2AFD900A44FCB /* FileManagerPersistent.swift in Sources */,
 				C083953C2BF14DA900B75B5B /* UIColor + Ex.swift in Sources */,
 				C08395192BF13F7400B75B5B /* NotesListViewController.swift in Sources */,
 				C083953F2BF150E000B75B5B /* NoteViewController.swift in Sources */,
@@ -405,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N76XYMAC58;
@@ -422,6 +427,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = my.personal.com.NotesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N76XYMAC58;
@@ -450,6 +457,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = my.personal.com.NotesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,7 +488,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C083952C2BF142A900B75B5B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		C02877A22BF2BBEA00A44FCB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -491,14 +499,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C083952D2BF142A900B75B5B /* SnapKit */ = {
+		C02877A32BF2BBEA00A44FCB /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C083952C2BF142A900B75B5B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = C02877A22BF2BBEA00A44FCB /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		C083952F2BF142A900B75B5B /* SnapKit-Dynamic */ = {
+		C02877A52BF2BBEA00A44FCB /* SnapKit-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C083952C2BF142A900B75B5B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = C02877A22BF2BBEA00A44FCB /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
